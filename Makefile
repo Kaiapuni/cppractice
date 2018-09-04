@@ -8,7 +8,7 @@ all: $(OBJECTS)
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
 
-well.o: well.cpp
+well.o: well.cpp well.h
 	$(CC) $(CFLAGS) well.cpp
 
 .PHONY: clean
