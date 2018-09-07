@@ -1,7 +1,14 @@
 #include <iostream>
 #include "well.h"
 
-int well(int how)
+Well :: Well(int r, int d, float f) : radius(r), depth(d), fill(f)
+{}
+
+float Well :: volume(int radius, int depth)
 {
-	std::cout << how * 3 << std::endl;
+	float v;
+	v = 3.14159 * std::pow(((float) radius), 2) * (float) depth;
+	return v;
 }
+
+float
